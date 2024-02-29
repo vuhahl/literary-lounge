@@ -1,0 +1,43 @@
+@media only screen and (min-width: 600px) {  
+
+   /* Your CSS Code for this device size */    
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {  
+
+   /* Your CSS Code for this device size */    
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {  
+
+   /* Your CSS Code for this device size */    
+
+}      
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+   /* Your CSS Code for this device size */ 
+
+}
+
+/* According to Mobile Orientation */
+@media only screen and (orientation: landscape) {   
+
+   /* Your CSS Code for this device orientation */    
+
+}
+
+.nav-pages li {
+	font-family: sans-serif;
+	font-size: 25px;
+	text-align: center;
+	width: 200px;
+	margin-left: 60px;
+	margin-right: 50px;
+	display: inline-block;
+	align-items: center;

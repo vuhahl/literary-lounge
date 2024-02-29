@@ -1,0 +1,535 @@
+
+body {
+	color: black;
+	margin: 0;
+	padding:0;
+	background-color: #efecec;
+	background-image: linear-gradient(#efecec 0%, #f9aba4 94%);
+	background-size: cover;
+	font-family: Georgia, serif;
+}
+
+header { /* Website Logo */
+	text-align:center;
+}
+
+#container{
+	max-width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:1rem;
+	padding-right:1rem;
+	
+}
+header img{ /* Website Logo sizing */
+	height: 220px;
+	width: 220px;
+}
+
+nav {
+	font-family: Georgia, serif;
+	font-size: 1.25em;
+	text-align: center;
+	margin-top: 1em;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullet style, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: darkgreen;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.webname {
+	text-decoration: none;
+	color: white;
+	margin: 50px 50px;
+	text-align: center;
+	border: outset #efecec;
+	background: #f9aba4;
+
+}
+
+.webname a:link{
+	text-decoration: none;
+	color: #000;
+}
+
+.webname a:visited{
+	text-decoration: none;
+	color: white;
+
+}
+
+.intro {
+
+    font: message-box;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 70px;
+    margin-right:70px;
+    flex-wrap: wrap;
+}
+
+.intro h2{
+    margin-top: 10px;
+    font-family: "Ink Free";
+    font-weight: bold;
+    cursor: pointer;
+  font-size: 42px;
+  transition: font-weight 150ms ease-in-out;
+}
+
+.intro h2:hover {
+  font-weight: 900;
+    color: darkgreen;
+}
+
+.intro p {
+    line-height: 1em;
+    flex-wrap: wrap;
+}
+
+/* Book Of The Month formatting */
+
+.bookMonth {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    border: outset floralwhite;
+    background: url("https://mcdn.wallpapersafari.com/medium/20/86/b3CjtL.jpg");
+    background-size: cover;
+    box-shadow: 10px 10px 12px grey;
+    flex-wrap: wrap;
+}
+
+.bookMonth h1{
+    color: floralwhite;
+    font-style: oblique;
+    padding: 10px;
+	margin-left: 100px;
+	margin-right:100px;
+	text-align: center;
+	border:  3px outset dimgrey;
+    box-shadow: 10px 10px 5px grey;
+	background: #f9aba4;
+}
+
+.bookMonth h2{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.bookMonth h3 {
+    font-size: 22px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.bookMonth img {
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+}
+
+/* Style displays for the mobile class */
+.Mobile {
+	display: inline;
+}
+/* Style hides the desktop class*/
+.Desktop {
+	display: none;
+}
+
+
+.monthtags span{
+    appearance: auto;
+	background:darkgreen;
+	color: white;
+	padding:5px 10px 5px 10px;
+	border-radius: 5px;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px */
+
+@media only screen and (min-width: 660px) {
+
+
+	/* Style specifies to hide the mobile class */
+	.Mobile {
+		display: none;
+	}
+
+	/* Style specifies to display the desktop class */
+	.Desktop {
+		display: inline;
+	}
+}
+
+/* = About Page */
+
+.container1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .left {
+          background-color: #FFEEF5;
+          box-shadow: 0 0 10px lightpink;
+        border: 2px solid black;
+        width: 40%;
+        margin: 10px;
+        padding: 30px;
+      }
+
+      .left h2{
+          font-size: 30px;
+      }
+
+
+      .left p {
+          font-size: 20px;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+      .right {
+        width: 40%;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .right img {
+        box-shadow: 10px 10px 5px grey;
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container1 {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .left {
+          width: 80%;
+        }
+
+        .left h2{
+            font-size: 34px;
+        }
+
+        .left p{
+            font-size: 20px;
+        }
+
+        .right {
+          width: 80%;
+        }
+      }
+
+@media only screen and (max-width: 660px) {
+
+    .left {
+        text-align: center;
+    }
+}
+
+.right img{
+    border-radius: 60%;
+}
+
+/* = Fiction Page */
+
+.gallery {
+  display: flex;
+	flex-wrap: wrap;
+  padding: 2px;
+  transition: 0.3s;
+}
+
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Set to 100% width by default for mobile view */
+}
+
+.booklink {
+  margin: 2px;
+  overflow: hidden;
+}
+
+.booklink:hover .gallery__image {
+  filter: grayscale(0);
+}
+
+.booklink:hover .captions {
+  opacity: 1;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+
+.captions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 15px 15px;
+  width: 100%;
+  font-family: serif;
+  font-size: 20px;
+  color: white;
+  opacity: 0;
+  background: #F42B64;
+  transition: 0.3s;
+}
+
+/* Media query for desktop view */
+@media screen and (min-width: 768px) {
+  .gallery {
+    flex-wrap: wrap; /* Wrap items to next row */
+  }
+  .columns {
+    width: 25%; /* Set to 25% width for desktop view */
+  }
+}
+
+/* Media query for tablet view */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .columns {
+    width: 50%;
+  }
+}
+
+/* = Recs Page */
+
+.txteffect h2 {
+	font-family: "Segoe UI Light";
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .typewrite > .wrap {
+    border-right: 0.08em solid #fff
+  }
+
+.recs-form{
+    margin: auto;
+	max-width: 450px;
+	font-family: sans-serif;
+}
+.recs-form label{
+    color: white;
+	display:block;
+	margin-bottom: 10px;
+}
+.recs-form > span{
+	float: left;
+	width: 90px;
+	font-weight: bold;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.recs-form fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 15px 0px;
+	border: 3px solid #FFD2D2;
+	padding: 60px;
+	background: darkgreen;
+	box-shadow: inset 0px 0px 15px darkolivegreen;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.recs-form fieldset legend{
+	color: white;
+	border-top: 1px solid darkgreen;
+	border-left: 1px solid darkgreen;
+	border-right: 1px solid darkgreen;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: darkseagreen;
+	padding: 5px 8px 3px 8px;
+	box-shadow: -0px -1px 2px darkolivegreen;
+	-moz-box-shadow:-0px -1px 2px darkseagreen;
+	-webkit-box-shadow:-0px -1px 2px darkseagreen;
+	font-weight: normal;
+	font-size: 16px;
+}
+.recs-form textarea{
+	width:250px;
+	height:100px;
+}
+.recs-form input[type=text],
+.recs-form input[type=handle],
+.recs-form input[type=date],
+.recs-form input[type=datetime],
+.recs-form input[type=number],
+.recs-form input[type=search],
+.recs-form input[type=time],
+.recs-form input[type=url],
+.recs-form input[type=email],
+.recs-form select,
+.recs-form textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid darkolivegreen;
+	outline: none;
+	color: black;
+    font-size: 18px;
+	padding: 3px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px black;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px darkgreen;
+	background: white;
+	width:90%;
+    margin-top: 5px;
+}
+
+.required {
+    color: red;
+    font-weight: normal;
+}
+
+.recs-form input[type=submit],
+.recs-form button[type=submit] {
+	background: orangered;
+	border: 1px solid orange;
+	padding: 5px 15px 5px 15px;
+	color: white;
+	box-shadow: inset -1px -1px 3px lightgreen;
+	-moz-box-shadow: inset -1px -1px 3px lightgreen;
+	-webkit-box-shadow: inset -1px -1px 3px darkslategrey;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-weight: bold;
+}
+
+.recs-form button{
+    appearance: auto;
+}
+
+
+@media only screen and (min-width: 860px) {
+
+    .nav { /* Removing Link "look" from nav pages, choosing a font colour and aligning it in the center */
+        text-decoration-line: none;
+        color: #000;
+        text-align: center;
+    }
+
+    .nav-pages ul { /* Removing link "look" from list of nav pages, removing bullets, and centering  */
+        border-radius: 0;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-pages li {
+        background-color: transparent;
+        margin: 0.3em;
+        padding: 35px;
+        font-family: sans-serif;
+        font-size: 26px;
+        display: inline-flex;
+    }
+
+    nav li a:link { /* nav pages regularly look black with no underline */
+        text-decoration: none;
+        color: black;
+    }
+
+    nav li a:visited {
+        text-decoration: none;
+        color: #000;
+    }
+
+    nav ul li a:hover {
+        color: #F42B64;
+        text-decoration: underline;
+
+    }
+
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+        transition: all .5s;
+    }
+
+    .nav li a {
+        color: #efecec;
+
+        display: block;
+        padding: 25px 20px;
+        text-align: center;
+    }
+
+    .navlines {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+footer {
+    padding: 5px;
+	font-size: .70em;
+	text-align: center;
+    margin: 5em;
+    color: black;
+}
+
+/* Style for anchor elements within the footer */
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer img{
+  align-items: center;
+  flex-wrap: wrap;
+  width: 3.5%;
+  height: 3.5%;
+}
+
+

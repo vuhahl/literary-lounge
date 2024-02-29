@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="scripts/myScript.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Literary Lounge</title>
+	<link rel="favicon" type="image/png" href="\images\loungelogo.png">
+</head>
+
+<body>
+<div id="container">
+	<!--Website Logo -->
+	<header>
+		<a href="index.html"><img src="images/loungelogo.png" alt="The Literary Lounge Official Logo"></a>
+	</header>
+
+     <hr class="navlines" color="white"> <!-- lines around nav page-->
+
+<nav> <!--Other webpages-->
+
+    <div class="nav-pages">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me!</a></li>
+            <li><a href="fiction.html">Fiction</a></li>
+            <li><a href="nonfiction.html">Nonfiction</a></li>
+            <li><a href="recs.html">Recommendations?</a></li>
+        </ul>
+    </div>
+</nav>
+
+     <hr class="navlines" color="white"> <!-- lines around nav page-->
+
+<div class="webname">
+<a><h1> The Literary Lounge </h1></a>
+</div>
+
+<main> <!-- for main body of website, eg book of the month -->
+
+    <div class="txteffect">
+    <h2>
+        <a class="typewrite" data-period="2000" data-type='["Read a good book recently?", "Like to give recommendations?", "Let me know your book favs!"]'>
+    <span class="wrap"></span>
+  </a>
+    </h2>
+    </div>
+
+    <div class="recs-form">
+
+        <form>
+            <fieldset><legend> Personal </legend>
+                <label for="field1"><span> Name <span class="required">*</span></span> <input type="text" class="input-field" name="field1" value="" /></label>
+                <label for="field2"><span> Handle (@) <span class="required">*</span></span> <input type="handle" class="input-field" name="field2" value="" /></label>
+                <label for="field3"><span> Book Name <span class="required">*</span></span> <input type="text" class="input-field" name="field3" value="" /></label>
+                <label for="field4"><span> Author <span class="required">*</span></span> <input type="text" class="input-field" name="field4" value="" /></label>
+            </fieldset>
+
+            <fieldset><legend> Anything Else I Should Know ? </legend>
+                <label for="field6"><span>Message <span class="required">*</span></span> <textarea name="field6" class="textarea-field"></textarea></label>
+                <button type="submit" onclick="submitForm()">Submit</button>
+            </fieldset>
+
+
+
+        </form>
+    </div>
+
+</main>
+
+<footer>
+	<div id="copyright">
+		<p> &copy; Copyright 2015. All rights Reserved.<br>
+		<p>The Literary Lounge<br>
+	</div>
+
+	<div id="social">
+		<p>Connect with us:</p>
+		<p><a href="https://www.instagram.com/thelitlounge.read/"><img src="images/instagram.png" alt="Instagram logo"></a>
+		<a href="https://www.goodreads.com/user/show/165429823-mariana"><img src="images/goodreads.png" alt="Goodreads logo"></a>
+        <a href="https://www.pinterest.com/melaninsun/"><img src="images/pinterest.png" alt="Pinterest logo"></a></p>
+	</div>
+	</footer>
+</div>
+</body>
+
+</html>
